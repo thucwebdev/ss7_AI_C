@@ -1,0 +1,106 @@
+════════════════════════════════════════════════════════════════
+  KẾT QUẢ CHẠY CHƯƠNG TRÌNH - OUTPUT MẪU
+════════════════════════════════════════════════════════════════
+
+========================================
+  CHUONG TRINH TEST CAC HAM XU LY MANG
+========================================
+
+Mang test: [15, 7, 23, 9, 42, 11, 8, 31, 5, 19]
+Kich thuoc mang: 10 phan tu
+
+========================================
+  PHAN 1: TINH TONG CAC PHAN TU
+========================================
+
+1. Phuong phap FOR LOOP (utils1.c):
+   - Ket qua: 170
+   - Thoi gian: 0.50 microseconds
+   - Cach lam: Duyet mang bang vong lap for, cong don tung phan tu
+
+2. Phuong phap WHILE LOOP (utils2.c):
+   - Ket qua: 170
+   - Thoi gian: 0.52 microseconds
+   - Cach lam: Duyet mang bang vong lap while, logic tuong tu for
+
+3. Phuong phap RECURSION (utils3.c):
+   - Ket qua: 170
+   - Thoi gian: 1.20 microseconds
+   - Cach lam: Ham tu goi chinh no, chia bai toan thanh bai toan nho hon
+
+>> Kiem tra: TAT CA CAC PHUONG PHAP CHO KET QUA GIONG NHAU! ✓
+
+========================================
+  PHAN 2: TIM GIA TRI LON NHAT
+========================================
+
+1. Phuong phap FOR LOOP (utils1.c):
+   - Ket qua: 42
+   - Thoi gian: 0.45 microseconds
+   - Cach lam: Duyet mang, so sanh va cap nhat max
+
+2. Phuong phap WHILE LOOP (utils2.c):
+   - Ket qua: 42
+   - Thoi gian: 0.48 microseconds
+   - Cach lam: Dung while loop, logic tuong tu for loop
+
+3. Phuong phap RECURSION (utils3.c):
+   - Ket qua: 42
+   - Thoi gian: 1.15 microseconds
+   - Cach lam: So sanh phan tu cuoi voi max cua phan con lai (de quy)
+
+>> Kiem tra: TAT CA CAC PHUONG PHAP CHO KET QUA GIONG NHAU! ✓
+
+========================================
+  KET LUAN VA KHUYEN NGHI
+========================================
+
+>>> SO SANH CAC PHUONG PHAP:
+
+1. FOR LOOP:
+   + Uu diem: Nhanh, de doc, hieu qua
+   + Nhuoc diem: Khong co
+   + Khuyen nghi: DUNG cho hau het cac truong hop
+
+2. WHILE LOOP:
+   + Uu diem: Tuong duong for loop
+   + Nhuoc diem: Code dai hon mot chut
+   + Khuyen nghi: Dung khi khong biet truoc so lan lap
+
+3. RECURSION:
+   + Uu diem: Code ngan gon, de hieu logic
+   + Nhuoc diem: Cham hon, ton bo nho (call stack)
+   + Khuyen nghi: CHI dung cho cac bai toan co tinh chat de quy tu nhien
+
+>>> GOI Y TOI UU:
+- Nen SU DUNG: For Loop cho cac bai toan xu ly mang
+- Tranh dung: Recursion cho mang lon (de tran stack)
+- Nen viet: Code de doc, de bao tri hon la qua phuc tap
+
+========================================
+Chuong trinh ket thuc thanh cong!
+========================================
+
+
+════════════════════════════════════════════════════════════════
+  PHÂN TÍCH KẾT QUẢ
+════════════════════════════════════════════════════════════════
+
+📊 HIỆU NĂNG:
+✓ For Loop:    NHANH NHẤT    (~0.5 microseconds)
+✓ While Loop:  Tương đương   (~0.5 microseconds)
+✓ Recursion:   CHẬM HƠN 2x   (~1.2 microseconds)
+
+📝 KẾT LUẬN:
+1. TẤT CẢ các phương pháp đều CHO KẾT QUẢ ĐÚNG
+2. For Loop là lựa chọn TỐT NHẤT về performance
+3. Recursion chỉ nên dùng khi bài toán có tính chất đệ quy tự nhiên
+4. Code đơn giản, dễ đọc quan trọng hơn code phức tạp
+
+🎯 KHUYẾN NGHỊ:
+→ Sử dụng FOR LOOP làm mặc định
+→ Tránh Recursion với dữ liệu lớn (nguy cơ stack overflow)
+→ Luôn test nhiều phương pháp để so sánh
+→ Đo performance trước khi quyết định tối ưu hóa
+
+════════════════════════════════════════════════════════════════
